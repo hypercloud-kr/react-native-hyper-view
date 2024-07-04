@@ -156,5 +156,10 @@
         }
       ]
     ]
+  },
+  "create-react-native-library": {
+    "type": "module-legacy",
+    "languages": "kotlin-swift",
+    "version": "0.37.0"
   }
 }
