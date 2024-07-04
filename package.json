@@ -4,8 +4,7 @@
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "index.d.ts",
-  "react-native": "src/index",
+  "types": "lib/typescript/src/index.d.ts",
   "source": "src/index",
   "files": [
     "src",
