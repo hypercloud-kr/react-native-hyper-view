@@ -20,3 +20,13 @@ const HyperView = NativeModules.HyperView
 export function multiply(a: number, b: number): Promise<number> {
   return HyperView.multiply(a, b);
 }
+
+export function initializeHyperView() {
+  HyperView.initializeHyperView();
+  return;
+}
+
+export function openARView(id: number) {
+  HyperView.openARView(id);
+  return;
+}
