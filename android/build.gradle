@@ -88,6 +88,7 @@ repositories {
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
+def aarDir = file('../../../unity/builds/android/unityLibrary/')
 
 dependencies {
   // For < 0.71, this will be from the local maven repo
@@ -95,5 +96,12 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  
+  implementation fileTree(dir: aarDir, include: ['arcore_client.aar'])
+  implementation fileTree(dir: aarDir, include: ['ARPresto.aar'])
+  implementation fileTree(dir: aarDir, include: ['HyperXRConnect-release.aar'])
+  implementation fileTree(dir: aarDir, include: ['unityandroidpermissions.aar'])
+  implementation fileTree(dir: aarDir, include: ['UnityARCore.aar'])
+  implementation fileTree(dir: aarDir, include: ['unityLibrary-release.aar'])
 }
 
