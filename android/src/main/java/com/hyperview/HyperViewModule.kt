@@ -6,8 +6,8 @@ import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.bridge.Promise
 import com.hypercloud.connect.HyperCloudConnect
 
-class HyperViewModule(reactContext: ReactApplicationContext) :
-  ReactContextBaseJavaModule(reactContext) {
+class HyperViewModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+  private val reactContext: ReactApplicationContext = reactApplicationContext
 
   override fun getName(): String {
     return NAME
