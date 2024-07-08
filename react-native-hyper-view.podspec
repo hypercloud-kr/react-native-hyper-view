@@ -38,4 +38,11 @@ Pod::Spec.new do |s|
       s.dependency "ReactCommon/turbomodule/core"
     end
   end
+  s.prepare_command =
+  <<-CMD
+    cp -R ../../../unity/builds/ios/UnityFramework.framework ios/
+    cp -R ../../../unity/builds/ios/HyperXRConnect.framework ios/
+  CMD
+
+  s.vendored_frameworks = ["ios/UnityFramework.framework", "ios/HyperXRConnect.framework"]
 end
